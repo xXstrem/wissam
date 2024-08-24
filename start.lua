@@ -14503,6 +14503,21 @@ local NamecBots = {
 return bot.sendText(msg.chat_id,msg.id, NamecBots[math.random(#NamecBots)],"md",true)  
 end
 end
+if text == 'دنجب' or text == 'انجب' or text == 'انجبي' or text == 'نجب' or text == 'دنجبي' or text == 'نجبي' then
+if redis:get(bot_id.."Status:Reply"..msg.chat_id) then
+local NamecBots = {
+'دنـجـب أنت لك 🤫😉',
+'عمو بعدك زعطوط روح من وجهي 🤣👊🏽.',
+'دروح روح لا اخلي العالم تضحك عليك 😹😎',
+'اتخسي ولك اني انچب؟؟ أنت انجب 🙄😒',
+'لتشمر لا أهينك 🫣',
+'دعيدهة وشوف شيصير 😏🤞',
+'دمشي لا اصيحلك المطور يهينك 🤫🤣',
+'هلمرة سماح.. المره الثانية اشححطكك هناا بلكروب 👊🏽🙃',
+}
+return bot.sendText(msg.chat_id,msg.id, NamecBots[math.random(#NamecBots)],"md",true)  
+end
+end
 if text == 'سم' then
 if redis:get(bot_id.."Status:Reply"..msg.chat_id) then
 local NamecBots = {
